@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 
@@ -11,7 +13,7 @@ class Character
 
 		// Destructor
 
-		~Character() = default ;
+		virtual ~Character() = default ;
 
 		// Functions
 
@@ -19,7 +21,7 @@ class Character
 		void Break();
 		void Set_speed_to_ten();
 
-		// virtual std::string WhatAmI() const = 0;
+		virtual std::string WhatAmI() const = 0;
 
 		// Getter
 
