@@ -29,5 +29,23 @@ int main(int argc, char const *argv[])
 	std::cout << "I am " << yoshi.WhatAmI() << std::endl;
 	std::cout << "And I am " << mario.WhatAmI() << std::endl;
 
+	std::cout << "Yoshi and Mario are starting at speed "<< mario.speed() << std::endl;
+	mario.Accelerate();
+	mario.Accelerate();
+	mario.Accelerate();
+	mario.Accelerate();
+	std::cout << "Mario is now at speed " << mario.speed() << std::endl;
+
+	yoshi.Accelerate();
+	yoshi.Accelerate();
+	yoshi.Accelerate();
+	yoshi.Accelerate();
+	yoshi.Accelerate();
+	yoshi.Break();
+	yoshi.Break();
+	yoshi.Break();
+	std::cout << "Yoshi is now at speed " << yoshi.speed() << std::endl;
+
+
 	return 0;
 }
