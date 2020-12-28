@@ -16,8 +16,8 @@ void Character::Accelerate(){
 	}
 
 	else if(this->speed_ < 0){
-		std::cout << "Before accelerating try to engage first gear ... " << std::endl << "Your speed was set to zero" << std::endl;
-		speed_ = 0;
+		std::cout << "Before accelerating try to engage first gear ... " << std::endl << "Your speed was set to one" << std::endl;
+		speed_ = 1;
 	}
 
 	else if(this->speed_ >= 0 and this->speed_ < this->max_speed_){

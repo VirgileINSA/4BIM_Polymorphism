@@ -17,7 +17,7 @@ class Character
 
 		// Functions
 
-		void Accelerate();
+		virtual void Accelerate();
 		void Break();
 		void Set_speed_to_ten();
 
