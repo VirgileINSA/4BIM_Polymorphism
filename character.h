@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class Character
 {
@@ -7,7 +8,6 @@ class Character
 		// Constructors
 
 		Character();
-		Character(Character* Character);
 
 		// Destructor
 
@@ -17,10 +17,15 @@ class Character
 
 		void Accelerate();
 		void Break();
+		void Set_speed_to_ten();
+
+		// virtual std::string WhatAmI() const = 0;
 
 		// Getter
 
-		inline float speed() const;
+		inline float speed() const{
+			return speed_;
+		};
 
 	protected:
 
