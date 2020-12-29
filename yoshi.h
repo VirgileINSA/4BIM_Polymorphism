@@ -6,8 +6,12 @@ class Yoshi : public Character
 {
 	public:
 
-		Yoshi();
+		Yoshi(int c);
 		std::string WhatAmI() const override;
-		~Yoshi() = default;
+		~Yoshi() override = default;
 		void Accelerate() override;
+
+	protected :
+
+		int crests_ ;
 };

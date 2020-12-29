@@ -1,10 +1,12 @@
 #include "yoshi.h"
 
-Yoshi::Yoshi() : Character(){}
+Yoshi::Yoshi(int c) : Character(){
+	crests_ = c;
+}
 
 std::string Yoshi::WhatAmI() const
 {
-	return std::string("Yoshi");
+	return (std::to_string(crests_) + std::string(" crested Yoshi"));
 };
 
 void Yoshi::Accelerate(){
