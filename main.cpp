@@ -91,7 +91,22 @@ int main(int argc, char const *argv[])
 		std::cout << "AH ... Something didn't go as planned" << std::endl;
 	}
 
-	for (auto& characters: course) {delete characters;}
+	std::cout << course[0] << std::endl;
+	std::cout << course[1] << std::endl;
+	std::cout << course[2] << std::endl;
+	std::cout << course.size() << std::endl;
+
+	// Trying to delete but it doesn't woooooooork :'( 
+
+	// for(int i = 0; i < course.size(); ++i){
+	// 	delete course[i];
+	// }
+
+	// for (auto& characters: course) {delete characters;}
+
+	// for(std::vector<Character*>::iterator characters = course.begin(); characters != course.end(); ++characters) {
+ 	// 		delete &characters ;
+ 	// }
 
 	return 0;
 }
