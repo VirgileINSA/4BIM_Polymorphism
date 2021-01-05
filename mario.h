@@ -8,5 +8,5 @@ class Mario : public Character
 
 		Mario();
 		std::string WhatAmI() const override;
-		~Mario() override = default;
+		~Mario();
 };

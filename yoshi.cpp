@@ -4,6 +4,8 @@ Yoshi::Yoshi(int c) : Character(){
 	crests_ = c;
 }
 
+Yoshi::~Yoshi() {};
+
 std::string Yoshi::WhatAmI() const
 {
 	return (std::to_string(crests_) + std::string(" crested Yoshi"));

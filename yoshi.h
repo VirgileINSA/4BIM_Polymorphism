@@ -8,7 +8,7 @@ class Yoshi : public Character
 
 		Yoshi(int c);
 		std::string WhatAmI() const override;
-		~Yoshi() override = default;
+		~Yoshi();
 		void Accelerate() override;
 
 	protected :
