@@ -29,6 +29,8 @@ int main(int argc, char const *argv[])
 	Yoshi yoshi_3(3);
 	Mario mario;
 
+	std::cout << std::endl;
+
 	std::cout << "I am " << yoshi_3.WhatAmI() << std::endl;
 	std::cout << "And I am " << mario.WhatAmI() << std::endl;
 
@@ -78,8 +80,6 @@ int main(int argc, char const *argv[])
 	}
 
 	// Test of speed
-
-	std::cout << std::endl;
 
 	if (course[0]->speed() == course[1]->speed()){
 		std::cout << "Both Yoshis have the same speed as expected !" << std::endl;
