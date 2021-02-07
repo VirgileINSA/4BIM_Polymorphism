@@ -29,6 +29,10 @@ class Character
 			return speed_;
 		};
 
+		inline float max_speed() const{
+			return max_speed_;
+		};
+
 	protected:
 
 		// Attributes

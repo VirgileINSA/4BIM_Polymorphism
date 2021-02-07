@@ -56,28 +56,19 @@ int main(int argc, char const *argv[])
 	course.push_back(new Yoshi(4));
 	course.push_back(new Mario());
 
-	// Here course[0] is the 3 crested Yoshi.
-	// course[1] is the 5 crested Yoshi.
+	// Here course[0] is the 2 crested Yoshi.
+	// course[1] is the 4 crested Yoshi.
 	// course[2] is Mario.
 
-	std::string a ;
-	std::cout << "What type of course do you want to run ? (type either it or rb) : " ;
-	std::cin >> a;
-	std::cout << std::endl;
-
 	//Range based for
-	if(a == "rb"){
-		for(auto& characters: course) {
-    		characters->Accelerate();
-		}
-	}	
+	for(auto& characters: course) {
+    	characters->Accelerate();
+	}
 
 	// Using a for loop with iterator
-	if(a == "it"){
-		for(std::vector<Character*>::iterator characters = course.begin(); characters != course.end(); ++characters) {
-    		(*characters)->Accelerate();
-    	}
-	}
+	for(std::vector<Character*>::iterator characters = course.begin(); characters != course.end(); ++characters) {
+    	(*characters)->Accelerate();
+    }
 
 	// Test of speed
 
